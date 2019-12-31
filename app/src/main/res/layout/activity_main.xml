@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#f1f8e9"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ImageViewCamera"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_action_camera"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ImageViewGallery"
+        android:src="@drawable/ic_action_gallery"
+        android:layout_toRightOf="@id/ImageViewCamera" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ImageViewUpload"
+        android:src="@drawable/ic_action_upload"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ImageViewGallery" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ImageViewStop"
+        android:src="@drawable/stop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/Image"
+        android:src="@drawable/pensi"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/ImageViewStop"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/imgName"
+        android:hint="Enter name"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_below="@+id/Image"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeeid"
+        android:hint="Enter name"
+        android:editable="false"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_below="@+id/imgName"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/userid"
+        android:hint="Enter name"
+        android:editable="false"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_below="@+id/recipeeid"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/remark"
+        android:editable="false"
+        android:hint="Enter name"
+        android:textColorHint="@android:color/white"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_below="@+id/userid"/>
+
+</RelativeLayout>
